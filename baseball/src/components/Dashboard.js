@@ -1,4 +1,5 @@
 import React from "react";
+import "../../src/baseball.css";
 
 const Dashboard = ({ updateBalls, updateStrikes, updateFouls, updateHit }) => {
   return (

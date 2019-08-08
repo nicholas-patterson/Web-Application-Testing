@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.521)),
+    url(./img/background.jpg);
+  background-position-y: 500;
+  background-size: cover;
+}
+
+.app {
+  background: #eeeeeeb2;
+  width: 50%;
+  margin: 200px auto;
+  height: 400px;
+}
+
+.styling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: rgb(219, 16, 16);
+}
+
+span {
+  color: #333;
+  font-size: 3rem;
+}
+
+button {
+  font-size: 2.3rem;
+  background: none;
+  color: red;
+  border: #333 2px solid;
+  margin-right: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}

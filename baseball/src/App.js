@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Display from "./components/Display";
 import Dashboard from "./components/Dashboard";
+import "../src/baseball.css";
 
 function App() {
   const [balls, setBalls] = useState(0);
@@ -38,14 +39,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Display balls={balls} strike={strike} />
-      <Dashboard
-        updateBalls={updateBalls}
-        updateStrikes={updateStrikes}
-        updateFouls={updateFouls}
-        updateHit={updateHit}
-      />
+    <div className="app">
+      <div className="styling">
+        <Display balls={balls} strike={strike} />
+        <Dashboard
+          updateBalls={updateBalls}
+          updateStrikes={updateStrikes}
+          updateFouls={updateFouls}
+          updateHit={updateHit}
+        />
+      </div>
     </div>
   );
 }
