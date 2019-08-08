@@ -1,12 +1,12 @@
 import React from "react";
 
-const Dashboard = () => {
+const Dashboard = ({ updateBalls, updateStrikes, updateFouls, updateHit }) => {
   return (
     <div>
-      <button>Strike</button>
-      <button>Ball</button>
-      <button>Foul</button>
-      <button>Hit</button>
+      <button onClick={updateStrikes}>Strike</button>
+      <button onClick={updateBalls}>Ball</button>
+      <button onClick={updateFouls}>Foul</button>
+      <button onClick={updateHit}>Hit</button>
     </div>
   );
 };
