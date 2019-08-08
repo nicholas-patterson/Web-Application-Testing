@@ -4,7 +4,7 @@ import "../../src/baseball.css";
 const Display = ({ balls, strike }) => {
   return (
     <h3 className="title">
-      Balls: <span>{balls}</span> | Strikes: <span>{strike}</span>
+      Balls: {balls} | Strikes: {strike}
     </h3>
   );
 };
